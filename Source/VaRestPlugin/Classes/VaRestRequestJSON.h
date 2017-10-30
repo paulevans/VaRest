@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "LatentActions.h"
 #include "Engine/LatentActionManager.h"
 #include "Http.h"
 
