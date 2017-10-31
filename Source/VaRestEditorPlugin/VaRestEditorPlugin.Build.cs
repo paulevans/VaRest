@@ -9,8 +9,8 @@ public class VaRestEditorPlugin : ModuleRules
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"VaRestPlugin",
-				"VaRestPlugin/Public"
+				"VaRestEditorPlugin/Public",
+				"VaRestEditorPlugin/Classes",
 				
 				// ... add public include paths required here ...
 			});
@@ -28,7 +28,7 @@ public class VaRestEditorPlugin : ModuleRules
 			new string[]
 			{
 				"Core",
-                "VaRestPlugin"
+				"VaRestPlugin"
 
 				// ... add other public dependencies that you statically link with here ...
 			});
@@ -37,24 +37,25 @@ public class VaRestEditorPlugin : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-                "CoreUObject",
-                "Engine",
-                "Slate",
-                "SlateCore",
-                "InputCore",
-                "AssetTools",
-                "UnrealEd",     // for FAssetEditorManager
-                "KismetWidgets",
-                "KismetCompiler",
-                "BlueprintGraph",
-                "GraphEditor",
-                "Kismet",       // for FWorkflowCentricApplication
-                "PropertyEditor",
-                "EditorStyle",
-                "Sequencer",
-                "DetailCustomizations",
-                "Settings",
-                "RenderCore"
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore",
+				"InputCore",
+				"AssetTools",
+				"UnrealEd",     // for FAssetEditorManager
+				"KismetWidgets",
+				"KismetCompiler",
+				"BlueprintGraph",
+				"GraphEditor",
+				"Kismet",       // for FWorkflowCentricApplication
+				"PropertyEditor",
+				"EditorStyle",
+				"Sequencer",
+				"DetailCustomizations",
+				"Settings",
+				"RenderCore",
+				"VaRestPlugin"
 			});
 		
 		

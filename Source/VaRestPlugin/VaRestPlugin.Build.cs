@@ -14,6 +14,14 @@ namespace UnrealBuildTool.Rules
 					// ... add other private include paths required here ...
 				});
 
+			PublicIncludePaths.AddRange(
+			new string[] {
+				"VaRestPlugin/Public",
+				"VaRestPlugin/Classes",
+				
+				// ... add public include paths required here ...
+			});
+
 			PublicDependencyModuleNames.AddRange(
 				new string[]
 				{
